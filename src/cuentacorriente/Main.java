@@ -16,7 +16,7 @@ public class Main {
         cuenta1 = new CuentaCorriente("Mariano Martinez","1001-5632-58-234567891",2500,0);
         try 
         {
-            cuenta1.retirar(150);
+            cuenta1.ingresar(150);
         } catch (Exception e)
         {
             System.err.println(e.getMessage());
