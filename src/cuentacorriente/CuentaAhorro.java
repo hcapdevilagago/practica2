@@ -11,7 +11,6 @@ public class CuentaAhorro extends CuentaCorriente {
 
     public CuentaAhorro(String nombre, String numCuenta, double saldo, double interes) {
         super(nombre, numCuenta, saldo, 0);
-
         this.interes = interes;
     }
 
@@ -23,5 +22,4 @@ public class CuentaAhorro extends CuentaCorriente {
     public double getInteres() {
         return this.interes;
     }
-    /*kkkkk*/
 }
