@@ -7,20 +7,18 @@ package cuentacorriente;
 
 public class CuentaAhorro extends CuentaCorriente {
 
-    double interes;
+    private double interes;
 
-    public CuentaAhorro(String nombre, String numCuenta, double saldo, double interes) {
-        super(nombre, numCuenta, saldo, 0);
-
-        this.interes = interes;
-    }
-
-    public CuentaAhorro(String nombre, String numCuenta, double interes) {
-        super(nombre, numCuenta);
-        this.interes = interes;
+    public CuentaAhorro(String titular, String numCuenta) {
+        super(titular, numCuenta);
+        this.interes = 2.5;
     }
 
     public double getInteres() {
         return this.interes;
+    }
+
+    public void calcularInteres() {
+        setSaldo(getSaldo() - (getSaldo() * (this.interes / 100)));
     }
 }
